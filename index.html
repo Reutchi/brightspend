@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrightSpend — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1b1c1b; background: #f7f7f3; }
+  @media (prefers-color-scheme: dark) { body { color: #f5f5f0; background: #1b1c1b; } a { color: #9fd98a; } code { background: #282a28; } }
+  h1 { font-size: 30px; letter-spacing: -0.6px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 36px; }
+  .muted { color: #8a8f88; }
+  a { color: #3a7a24; }
+  code { background: #ececdf; padding: 1px 5px; border-radius: 5px; font-size: 90%; }
+  hr { border: none; border-top: 1px solid #c9ccc4; margin: 48px 0; }
+  ul { padding-left: 20px; }
+  .lang-switch { margin-bottom: 24px; }
+</style>
+</head>
+<body>
+
+<p class="lang-switch muted"><a href="#en">English</a> · <a href="#ro">Română</a></p>
+
+<h1 id="en">BrightSpend — Privacy Policy</h1>
+<p class="muted">Last updated: 6 November 2026</p>
+
+<p>BrightSpend (“the app”, “we”) is a personal-finance app. This policy explains what data the app handles and how. Your financial data stays on your device — we don’t run accounts and we don’t sync your data to our servers.</p>
+
+<h2>Who we are</h2>
+<p>Developer and data controller: Dan Reutchi, Romania. Contact: <a href="mailto:reutchi1997@gmail.com">reutchi1997@gmail.com</a>.</p>
+
+<h2>Data stored on your device</h2>
+<p>Everything you enter — transactions, categories, budgets, recurring items, receipt photos, and your app-lock PIN — is stored <strong>only on your device</strong> (via Apple’s on-device database and Keychain). We have no account system and no cloud sync, so we never receive or store this data on our side. Deleting the app, or using <em>Settings → Reset data</em>, permanently removes it.</p>
+
+<h2>Data sent to third parties when you use certain features</h2>
+<p>Some optional features send data off your device <strong>only to provide that feature</strong>. It is not linked to your identity, is not used for advertising or tracking, and is not retained by us:</p>
+<ul>
+  <li><strong>Receipt scanning (Pro):</strong> when you scan a receipt, the photo is sent to our processing endpoint, hosted on <strong>Cloudflare Workers</strong>, which forwards it to <strong>Google’s Gemini API</strong> to read the amount, merchant, category and date. The image is processed transiently to return the result and is not stored by us.</li>
+  <li><strong>“Ask your money” AI chat (Pro):</strong> an aggregated summary of your finances (totals, category sums, budgets) and your question are sent to the same Cloudflare-hosted endpoint, which forwards them to <strong>Google’s Gemini API</strong> to generate an answer. No individual transactions, names or account details are included.</li>
+  <li><strong>Exchange rates:</strong> when you add a transaction in another currency, the currency codes are sent to a public rates service (Frankfurter / open.er-api.com) to fetch an approximate rate. No personal data is included.</li>
+  <li><strong>Brand logos:</strong> for recurring subscriptions, a best-guess website domain derived from the item’s name is sent to Google’s public favicon service to fetch a logo.</li>
+</ul>
+<p>As with any internet request, these services necessarily receive your device’s <strong>IP address</strong> as part of the connection. We do not log or store it.</p>
+<p>These providers process the data under their own terms and privacy policies:
+<a href="https://policies.google.com/privacy">Google</a> (Gemini API, favicon service),
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> (our processing endpoint),
+<a href="https://frankfurter.dev/">Frankfurter</a>,
+<a href="https://www.exchangerate-api.com/terms">ExchangeRate-API</a>.</p>
+
+<h2>Legal basis (GDPR)</h2>
+<ul>
+  <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR): processing needed to provide the features you choose to use, such as receipt scanning and the AI chat.</li>
+  <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): fetching exchange rates and brand logos to make the app work as expected, with no personal data beyond what a network request inherently contains.</li>
+</ul>
+
+<h2>Data retention</h2>
+<ul>
+  <li><strong>On your device:</strong> kept until you delete it, reset the app, or uninstall it.</li>
+  <li><strong>Our processing endpoint (Cloudflare):</strong> data passes through in memory only to complete the request; we do not store receipt images, summaries, questions or answers.</li>
+  <li><strong>Google Gemini API:</strong> under Google’s paid API terms, inputs and outputs are not used to train Google’s models, but Google may retain them for a limited period solely to detect abuse and comply with law, as described in its terms.</li>
+</ul>
+
+<h2>Payments</h2>
+<p>Subscriptions (BrightSpend Pro) are processed by <strong>Apple</strong> through the App Store. We never receive your payment card or billing details. Apple handles the transaction under its own <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
+
+<h2>Analytics &amp; tracking</h2>
+<p>The app does <strong>not</strong> collect analytics, does <strong>not</strong> track you across apps or websites, contains <strong>no advertising</strong>, and we do <strong>not sell or share</strong> your data.</p>
+
+<h2>Children</h2>
+<p>BrightSpend is not directed to children under 16. We do not knowingly collect data from children.</p>
+
+<h2>Your rights</h2>
+<p>Under the GDPR you have the right to access, rectify, erase, restrict or object to the processing of your personal data, and to data portability. Because your data lives only on your device, you can exercise most of these directly: view, edit or delete any entry at any time, and wipe everything via <em>Settings → Reset data</em> or by uninstalling the app. For any other request or question, contact us at <a href="mailto:reutchi1997@gmail.com">reutchi1997@gmail.com</a>.</p>
+<p>You also have the right to lodge a complaint with a data protection authority. In Romania this is the <a href="https://www.dataprotection.ro/">National Supervisory Authority for Personal Data Processing (ANSPDCP)</a>; you may also contact the authority in your own EU country.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy; the “Last updated” date above will change accordingly. Continued use of the app after an update means you accept the revised policy.</p>
+
+<hr>
+
+<h1 id="ro" lang="ro">BrightSpend — Politica de confidențialitate</h1>
+<p class="muted">Ultima actualizare: 6 noiembrie 2026</p>
+
+<p lang="ro">BrightSpend („aplicația", „noi") este o aplicație de finanțe personale. Această politică explică ce date gestionează aplicația și cum. Datele tale financiare rămân pe dispozitivul tău — nu avem conturi și nu sincronizăm datele pe serverele noastre.</p>
+
+<h2 lang="ro">Cine suntem</h2>
+<p lang="ro">Dezvoltator și operator de date: Dan Reutchi, România. Contact: <a href="mailto:reutchi1997@gmail.com">reutchi1997@gmail.com</a>.</p>
+
+<h2 lang="ro">Date stocate pe dispozitivul tău</h2>
+<p lang="ro">Tot ce introduci — tranzacții, categorii, bugete, plăți recurente, poze de bon și codul PIN de blocare — este stocat <strong>doar pe dispozitivul tău</strong> (în baza de date locală Apple și în Keychain). Nu avem sistem de cont și nicio sincronizare în cloud, deci nu primim și nu stocăm aceste date. Ștergerea aplicației sau <em>Setări → Resetare date</em> le elimină definitiv.</p>
+
+<h2 lang="ro">Date trimise către terți la folosirea anumitor funcții</h2>
+<p lang="ro">Unele funcții opționale trimit date în afara dispozitivului <strong>doar pentru a oferi acea funcție</strong>. Nu sunt legate de identitatea ta, nu sunt folosite pentru publicitate sau urmărire și nu sunt păstrate de noi:</p>
+<ul lang="ro">
+  <li><strong>Scanare bon (Pro):</strong> când scanezi un bon, poza este trimisă către endpoint-ul nostru de procesare, găzduit pe <strong>Cloudflare Workers</strong>, care o transmite către <strong>API-ul Gemini de la Google</strong> pentru a citi suma, comerciantul, categoria și data. Imaginea este procesată temporar și nu este stocată de noi.</li>
+  <li><strong>Chat AI „Întreabă-ți banii" (Pro):</strong> un rezumat agregat al finanțelor tale (totaluri, sume pe categorii, bugete) și întrebarea ta sunt trimise către același endpoint găzduit pe Cloudflare, care le transmite către <strong>API-ul Gemini</strong> pentru a genera răspunsul. Nu se includ tranzacții individuale, nume sau date de cont.</li>
+  <li><strong>Cursuri valutare:</strong> când adaugi o tranzacție în altă monedă, codurile valutare sunt trimise către un serviciu public de cursuri (Frankfurter / open.er-api.com). Nu se includ date personale.</li>
+  <li><strong>Logo-uri branduri:</strong> pentru abonamentele recurente, un domeniu web estimat din numele elementului este trimis către serviciul public de favicon Google pentru a aduce un logo.</li>
+</ul>
+<p lang="ro">Ca la orice cerere pe internet, aceste servicii primesc în mod necesar <strong>adresa IP</strong> a dispozitivului tău, ca parte a conexiunii. Noi nu o înregistrăm și nu o stocăm.</p>
+<p lang="ro">Acești furnizori procesează datele conform propriilor termeni și politici:
+<a href="https://policies.google.com/privacy">Google</a> (API Gemini, serviciul de favicon),
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> (endpoint-ul nostru de procesare),
+<a href="https://frankfurter.dev/">Frankfurter</a>,
+<a href="https://www.exchangerate-api.com/terms">ExchangeRate-API</a>.</p>
+
+<h2 lang="ro">Temeiul legal (GDPR)</h2>
+<ul lang="ro">
+  <li><strong>Executarea unui contract</strong> (art. 6 alin. (1) lit. b) GDPR): prelucrarea necesară pentru a oferi funcțiile pe care alegi să le folosești, cum ar fi scanarea bonurilor și chatul AI.</li>
+  <li><strong>Interes legitim</strong> (art. 6 alin. (1) lit. f) GDPR): obținerea cursurilor valutare și a logo-urilor pentru funcționarea normală a aplicației, fără alte date personale în afară de cele inerente unei cereri în rețea.</li>
+</ul>
+
+<h2 lang="ro">Perioada de păstrare</h2>
+<ul lang="ro">
+  <li><strong>Pe dispozitivul tău:</strong> până când le ștergi, resetezi aplicația sau o dezinstalezi.</li>
+  <li><strong>Endpoint-ul nostru de procesare (Cloudflare):</strong> datele trec doar prin memorie, cât să se finalizeze cererea; nu stocăm poze de bon, rezumate, întrebări sau răspunsuri.</li>
+  <li><strong>API-ul Google Gemini:</strong> conform termenilor Google pentru API-ul plătit, datele nu sunt folosite pentru antrenarea modelelor Google, dar Google le poate păstra o perioadă limitată, exclusiv pentru detectarea abuzurilor și respectarea legii, conform termenilor săi.</li>
+</ul>
+
+<h2 lang="ro">Plăți</h2>
+<p lang="ro">Abonamentele (BrightSpend Pro) sunt procesate de <strong>Apple</strong> prin App Store. Nu primim niciodată datele cardului sau de facturare. Apple gestionează tranzacția conform <a href="https://www.apple.com/legal/privacy/">politicii sale</a>.</p>
+
+<h2 lang="ro">Analytics și urmărire</h2>
+<p lang="ro">Aplicația <strong>nu</strong> colectează analytics, <strong>nu</strong> te urmărește între aplicații sau site-uri, <strong>nu</strong> conține reclame și <strong>nu vindem și nu partajăm</strong> datele tale.</p>
+
+<h2 lang="ro">Copii</h2>
+<p lang="ro">BrightSpend nu este destinată copiilor sub 16 ani și nu colectăm cu bună știință date de la copii.</p>
+
+<h2 lang="ro">Drepturile tale</h2>
+<p lang="ro">Conform GDPR, ai dreptul de acces, rectificare, ștergere, restricționare sau opoziție față de prelucrarea datelor tale personale, precum și dreptul la portabilitatea datelor. Fiindcă datele tale sunt doar pe dispozitiv, poți exercita direct majoritatea acestor drepturi: poți vedea, edita sau șterge orice la orice moment și poți șterge tot din <em>Setări → Resetare date</em> sau dezinstalând aplicația. Pentru orice altă cerere sau întrebare: <a href="mailto:reutchi1997@gmail.com">reutchi1997@gmail.com</a>.</p>
+<p lang="ro">Ai și dreptul de a depune o plângere la o autoritate de protecție a datelor. În România aceasta este <a href="https://www.dataprotection.ro/">Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</a>; poți contacta și autoritatea din țara ta din UE.</p>
+
+<h2 lang="ro">Modificări</h2>
+<p lang="ro">Putem actualiza această politică; data „Ultima actualizare" se va schimba corespunzător. Folosirea în continuare a aplicației înseamnă acceptarea versiunii revizuite.</p>
+
+</body>
+</html>
